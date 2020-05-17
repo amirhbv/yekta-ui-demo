@@ -1,0 +1,48 @@
+{
+    "env": {
+        "browser": true,
+        "es6": true,
+        "node": true,
+        "jest": true
+    },
+    "parserOptions": {
+        "ecmaVersion": 2018,
+        "sourceType": "module"
+    },
+    "extends": [
+        "@nuxtjs/eslint-config-typescript",
+        "eslint:recommended",
+        "plugin:vue/recommended",
+        "plugin:prettier/recommended",
+        "prettier",
+        "prettier/vue"
+    ],
+    "plugins": [
+        "vue",
+        "prettier"
+    ],
+    "globals": {
+        "Atomics": "readonly",
+        "SharedArrayBuffer": "readonly"
+    },
+    "ignorePatterns": [
+        "node_modules/"
+    ],
+    "rules": {
+        "vue/component-name-in-template-casing": [
+            "error",
+            "kebab-case",
+            {
+                "registeredComponentsOnly": false
+            }
+        ],
+        "no-console": [
+            "warn",
+            {
+                "allow": [
+                    "error"
+                ]
+            }
+        ]
+    }
+}

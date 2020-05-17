@@ -1,0 +1,13 @@
+$primary: #fd0;
+$secondary: #0388ca;
+
+$body-bg: #f0f0f0;
+$font-family-sans-serif: IRANSans, Helvetica, sans-serif;
+$component-active-bg: $secondary;
+$link-color: $secondary;
+
+$form-group-margin-bottom: 1.5rem;
+
+@import 'bootstrap/scss/bootstrap';
+@import 'bootstrap-vue/src';
+@import 'yekta-ui/src';

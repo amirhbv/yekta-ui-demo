@@ -254,8 +254,9 @@
 </template>
 
 <script>
-import { createAttachmentAPI } from '../../services';
-import { Response } from '../../utils';
+import { Response } from 'yekta-ui/utils';
+
+import { createAttachmentAPI } from '~/services';
 
 export default {
     data: () => ({

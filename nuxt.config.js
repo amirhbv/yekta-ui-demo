@@ -41,14 +41,26 @@ export default {
     /*
      ** Plugins to load before mounting the App
      */
-    plugins: ['~/plugins/yekta-ui'],
+    plugins: [],
 
     /*
      ** Nuxt.js modules
      */
     modules: [
-        // Doc: https://bootstrap-vue.js.org/docs/
         ['bootstrap-vue/nuxt', { css: false, bvCSS: false }],
+        [
+            'yekta-ui/nuxt-module',
+            {
+                css: false,
+                //     accounts: {
+                //       internal: true,
+                //       redirect: {
+                //         query: { plt: "yektanet", type: "pub" },
+                //         domain: "https://publisher.yektanet.com"
+                //       }
+                //     }
+            },
+        ],
     ],
     buildModules: ['@nuxt/typescript-build'],
 

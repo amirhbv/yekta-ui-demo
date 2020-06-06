@@ -1,1 +1,1 @@
-export { createAttachmentAPI } from "./create-attachment-api";
+export { createAttachmentAPI } from './create-attachment-api';
